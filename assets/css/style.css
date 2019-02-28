@@ -1,0 +1,76 @@
+/*--------------------------------Home-Page---------------------------------*/
+body{
+    background: grey;
+}
+
+.heading-1{
+
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+
+.startQuiz{
+
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+button{
+
+    width: 180px;
+    height: 90px;
+    background: green;
+    position: absolute;
+    top: 40%;
+    right:43%;
+}
+
+/*--------------------------------Game Quiz---------------------------------*/
+.timeRemaining{
+    color: yellow;
+    font-size: 25px;
+    position: absolute;
+    top: 15%;
+    right:45%;
+}
+
+
+
+
+/*--------------------------------Game Result---------------------------------*/
+
+
+.heading-2{
+
+    color: yellow;
+    font-size: 30px;
+    position: absolute;
+    top: 30%;
+    right:45%;
+}
+.correctAns{
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    right:45%;
+}
+
+
+.incorrectAns{
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 60%;
+    right:45%;
+}
+
+.unAns{
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 70%;
+    right:45%;
+}
