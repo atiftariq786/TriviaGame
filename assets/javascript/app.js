@@ -16,17 +16,21 @@ $(document).ready (function  (){
 
     $(".finalResult").hide(); 
     $(".heading-2").hide(); 
-    
+    $(".mcqz").hide(); 
+    $(".timeRemaining").hide();
 //-----------------------Button click section ---------------------------------------------------
 
         $(document).on("click", ".startQuiz", function(){
 
-            window.location.href = "./quiz.html";
+            
             
             timerRun();
             decrement();
              
-            
+            $(".startQuiz").hide(); 
+            $(".mcqz").show(); 
+            $(".timeRemaining").show();
+    
 
         })
         
@@ -35,7 +39,7 @@ $(document).ready (function  (){
             clearInterval(intervalId);
             intervalId = setInterval(decrement, 1000);
         }
-            timerRun();
+            
   
 
         function decrement() {
