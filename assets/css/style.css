@@ -36,7 +36,25 @@ button{
     right:45%;
 }
 
+ .mcqz {
+    color: white;
+    font-size: 20px;
+    margin: 100px auto auto 30px;    
+    line-height: 50px;
+    
+}
 
+.finishQuiz{
+
+    width: 120px;
+    height: 60px;
+    color: black;
+    background: orange;
+    font-size: 25px;
+    position: absolute;
+    top: 80%;
+    right:47%;
+}
 
 
 /*--------------------------------Game Result---------------------------------*/
