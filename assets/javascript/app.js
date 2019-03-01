@@ -5,10 +5,17 @@ $(document).ready (function  (){
 
 
 
-    var number = 905;
+    var number = 20;
     var intervalId ;
     var answers = ["q1-1", "q2-2", "q3-3", "q4-2","q5-3" ];
     var userSelection = [0,0,0,0,0];
+    var correctAns = 0;
+    var incorrectAns = 0;
+    var unAns = 0;
+    
+
+    $(".finalResult").hide(); 
+    $(".heading-2").hide(); 
     
 //-----------------------Button click section ---------------------------------------------------
 
@@ -18,8 +25,11 @@ $(document).ready (function  (){
             
             timerRun();
             decrement();
+             
+            
 
         })
+        
 //------------------------ Timer Section------------------------------------------------------------
         function timerRun() {
             clearInterval(intervalId);
@@ -36,7 +46,12 @@ $(document).ready (function  (){
         
             if(number === 0){
                 stop();  
-                window.location.href = "./result.html";
+                
+              //  window.location.href = "./result.html";
+              $(".mcqz").hide();  
+              $(".timeRemaining").hide();
+              resultCount();  
+              $(".finalResult").show(); 
             }
 
    
@@ -53,7 +68,7 @@ $(document).ready (function  (){
         $(document).on("click", ".qOptions", function(){
 
           var id = $(this).attr('id')
-          
+
             if(id === "q1-1" || id==="q1-2" ||  id==="q1-3") {
 
                 userSelection[0]= id;
@@ -79,35 +94,68 @@ $(document).ready (function  (){
 
                 userSelection[4]= id;
             }
-
-
-
-
+            //------------------------------------------------------------------
 
             
+//---------------------------------------------------------------------------------
+               // if (number === 0 || $(".finishQuiz")=== true){
+                //resultCount();
+
+               // }
+
+                
+
+            console.log("User :"+ userSelection);
+           console.log("correct :"+correctAns);
+           console.log("unAnswer :"+ unAns);
+            console.log("wrong :"+ incorrectAns);
 
 
-            console.log(userSelection);
-
-        })
-
-        function compare(){
+  })
+            function resultCount(){
+                for(var i=0; i<userSelection.length; i++){
 
 
+                    if(userSelection[i] === answers[i]){
+    
+                        correctAns +=1;
+                  $("#countCorrect").text(correctAns);   
+    
+                    }
+    
+                    else if (userSelection[i]!== answers[i]  && userSelection[i] !== 0){
+                        incorrectAns+=1;
+                        $("#countWrong").text(incorrectAns);
+                    }
+    
+                    else{
+                        unAns++; 
+                        $("#countMissing").text(unAns);
+                    }
+    
+    
+    
+                }
 
 
 
-        }
+            }
+        
 
 
 
 //------------------Quiz Done Section------------------------------------
         $(document).on("click", ".finishQuiz", function(){
 
-            window.location.href = "./result.html";
+           // window.location.href = "./result.html";
+           $(".mcqz").hide(); 
+            stop();
+            $(".heading-2").show(); 
+            $(".timeRemaining").hide();
+            resultCount();           
+            $(".finalResult").show(); 
             
-            stop()
-
+            
         })
 
 
