@@ -5,7 +5,7 @@ $(document).ready (function  (){
 
 
 
-    var number = 20;
+    var number = 60;
     var intervalId ;
     var answers = ["q1-1", "q2-2", "q3-3", "q4-2","q5-3" ];
     var userSelection = [0,0,0,0,0];

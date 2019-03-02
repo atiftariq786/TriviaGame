@@ -15,9 +15,9 @@
 
 ![alt text](https://github.com/atiftariq786/TriviaGame/blob/master/assets/images/Trivia-1.jpg?raw=true "Trivia Game-Start")
 
-![alt text](https://github.com/atiftariq786/TriviaGame/blob/master/assets/images/Trivia-2.jpg?raw=true"Trivia Game-Quiz")
+![alt text](https://github.com/atiftariq786/TriviaGame/blob/master/assets/images/Trivia-2.jpg?raw=true "Trivia Game-Start")
 
-![alt text](https://github.com/atiftariq786/TriviaGame/blob/master/assets/images/Trivia-3.jpg?raw=true"Trivia Game-Result")
+![alt text](https://github.com/atiftariq786/TriviaGame/blob/master/assets/images/Trivia-3.jpg?raw=true "Trivia Game-Result")
 
 ## Getting Started
 
