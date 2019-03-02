@@ -1,13 +1,55 @@
 /*--------------------------------Home-Page---------------------------------*/
 body{
-    background: grey;
+    background: white;
+    height: 600px;
+    width: 960px;
 }
 
 .heading-1{
 
     font-size: 40px;
-    text-align: center;
-    color: white;
+    
+    color:grey;
+    position: absolute;
+    top: 0%;
+    right:36%;
+}
+
+.animation-1 {
+    width: 320px;
+    height: 200px;
+    position: absolute;
+    right: 15%;
+    top: 30%;
+}
+.animation-2 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: 62%;
+    top: 30%;
+}
+.animation-3 {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    right: 10%;
+    top: 25%;
+}
+
+.animation-4 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 48%;
+    top: 20%;
+}
+.animation-5 {
+    width: 200px;
+    height: 250px;
+    position: absolute;
+    right: 43%;
+    top: 30%;
 }
 
 .startQuiz{
@@ -21,7 +63,7 @@ button{
 
     width: 180px;
     height: 90px;
-    background: green;
+    background:rgb(46, 43, 43);
     position: absolute;
     top: 40%;
     right:43%;
@@ -29,17 +71,17 @@ button{
 
 /*--------------------------------Game Quiz---------------------------------*/
 .timeRemaining{
-    color: yellow;
+    color:red;
     font-size: 25px;
     position: absolute;
     top: 15%;
-    right:45%;
+    right:40%;
 }
 
  .mcqz {
-    color: white;
-    font-size: 20px;
-    margin: 100px auto auto 30px;    
+    color:grey;
+    font-size: 18px;
+    margin: 70px auto auto 30px;    
     line-height: 20px;
     
 }
@@ -62,14 +104,14 @@ button{
 
 .heading-2{
 
-    color: yellow;
+    color: orange;
     font-size: 30px;
     position: absolute;
     top: 30%;
     right:45%;
 }
 .correctAns{
-    color: white;
+    color: rgb(39, 38, 38);
     font-size: 25px;
     position: absolute;
     top: 50%;
@@ -78,7 +120,7 @@ button{
 
 
 .incorrectAns{
-    color: white;
+    color: rgb(39, 38, 38);
     font-size: 25px;
     position: absolute;
     top: 60%;
@@ -86,7 +128,7 @@ button{
 }
 
 .unAns{
-    color: white;
+    color: rgb(39, 38, 38);
     font-size: 25px;
     position: absolute;
     top: 70%;
